@@ -1,0 +1,30 @@
+# Class
+:- Classes are like template for creating Object.
+:- Classes can be named or anonymous, similar to function expressions.
+
+    class  Class1 { }
+    const  Class2  =  class { }
+
+
+:- Classes are NOT hoisted like function declarations, We cannot access class before declare.
+### Methods
+functions defined in class, it is automatically added to prototype object whenever we create any instance.
+### Constructor
+this is a method, which runs automatically whenever we create an instance of Class.
+
+    class Class3 {
+      constructor() {
+        // code inside this will run automatically.
+      }
+    }
+
+### Getters and Setters
+these are methods, which can be used to access/modify the object without invoking the method. [(see example)](https://github.com/vikasAnand007/dev_docs)
+### Inheritence (extends)
+It allows a class to use properties and methods from parent class. [(see example)](https://github.com/vikasAnand007/dev_docs)
+
+**Super** : It has two purposes [(see example)](https://github.com/vikasAnand007/dev_docs)
+1. Call constructor of parent class
+2. Access properties and methods of parent class
+
+**Method override**: We can also override parent class methods in extended/inherited class. [(see example)](https://github.com/vikasAnand007/dev_docs)
