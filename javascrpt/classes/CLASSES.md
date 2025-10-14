@@ -31,7 +31,7 @@ It allows a class to use properties and methods from parent class. [(see example
 
 **Method override**: We can also override parent class methods in extended/inherited class. [(see example)](https://github.com/vikasAnand007/dev_docs/blob/master/javascrpt/classes/extends/index.js)
 
-### Encapsulation (Private Fields)
+### Encapsulation (Private fields/methods)
 In JavaScript classes, fields and methods are public by default. That means any code outside the class can access or modify them.
 
 To overcome this issue private fields (**# syntex**) are defined.
@@ -42,6 +42,13 @@ Any field/method defined with private(#) can be accessed/modified only within th
 - Private fields/methods and not passed to sub class when extended.
 - Private fields/methods are not reflected in `Object.Keys()`
 
+### Static fields/methods
+Static fields/methods are attached to class itself, NOT to individual instance of class.
+
+`Date.now()` ✅
+`const d = Date.now(); d.now()` ❌
+
+ [(see example)](https://github.com/vikasAnand007/dev_docs/blob/master/javascrpt/classes/static/index.js)
 
 
 
